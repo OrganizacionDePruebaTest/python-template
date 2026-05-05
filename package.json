@@ -1,19 +1,13 @@
 {
-  "name": "asociacion-node-template",
+  "name": "asociacion-python-template",
   "version": "1.0.0",
-  "type": "module",
+  "description": "Template de Python compatible con el pipeline universal de Ops",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --ext .js,.jsx --fix",
-    "test": "vitest run --passWithNoTests"
+    "test": "pytest --pass-with-no-tests",
+    "build": "python -m build_script",
+    "lint": "flake8 ."
   },
   "devDependencies": {
-    "eslint": "^8.57.1",
-    "eslint-plugin-react": "^7.37.5",
-    "vite": "^8.0.10",
-    "vitest": "^4.1.5"
+    "netlify-cli": "^17.0.0"
   }
 }
-
