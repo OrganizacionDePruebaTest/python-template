@@ -10,7 +10,7 @@ Para comenzar un nuevo proyecto siguiendo nuestros estándares, sigue estos paso
 
 1.  **Solicitud:** Solicita un nuevo repositorio basado en este *template* a través de una conversación en el canal oficial o contactando con tu **Coordinador de Proyecto**.
 2.  **Asignación:** Una vez asignado, clónalo localmente:
-    `git clone https://github.com/tu-asociacion/nombre-de-tu-repo.git`
+    `git clone [https://github.com/tu-asociacion/nombre-de-tu-repo.git](https://github.com/tu-asociacion/nombre-de-tu-repo.git)`
 3.  **Instalación:** 
     *   Crea y activa un entorno virtual: `python -m venv venv` y actívalo (`source venv/bin/activate` en Linux/macOS o `venv\Scripts\activate` en Windows).
     *   Instala las dependencias de Python: `pip install .[dev,test]`
@@ -37,16 +37,20 @@ Aunque el código sea Python, utilizamos los comandos de `npm` para disparar las
 
 ### 🧪 Tests Unitarios
 Los archivos de prueba deben ubicarse en la carpeta `tests/` o junto al código fuente con el prefijo `test_`. 
+
 ```text
 project/
 ├── src/
 │   └── main.py
 └── tests/
-    └── test_main.py     <-- Pytest lo encuentra aquí
+    └── test_main.py     <-- Pytest lo encuentra aquí.
+```
+
+*Si una funcionalidad no tiene tests, el pipeline continuará, pero la salud del código será responsabilidad del desarrollador.*
 
 ---
 
-### 🛠️ SOLO PARA DEVOPS
+### 🛠️ Solo para DevOps
 Esta sección detalla cómo este template de Python se "disfraza" de Node.js para encajar en el Pipeline Universal de la asociación.
 
 *   **`pyproject.toml`**: Es la fuente de verdad del proyecto Python. Define el sistema de construcción (`setuptools`), las dependencias del proyecto y las herramientas de desarrollo (`pytest`, `flake8`, `black`).
