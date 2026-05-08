@@ -10,7 +10,7 @@ Para comenzar un nuevo proyecto siguiendo nuestros estándares, sigue estos paso
 
 1.  **Solicitud:** Solicita un nuevo repositorio basado en este *template* a través de una conversación en el canal oficial o contactando con tu **Coordinador de Proyecto**.
 2.  **Asignación:** Una vez asignado, clónalo localmente:
-    `git clone [https://github.com/tu-asociacion/nombre-de-tu-repo.git](https://github.com/tu-asociacion/nombre-de-tu-repo.git)`
+    `git clone [https://github.com/tu-asociacion/nombre-de-tu-repo.git]`
 3.  **Instalación:** 
     *   Crea y activa un entorno virtual: `python -m venv venv` y actívalo (`source venv/bin/activate` en Linux/macOS o `venv\Scripts\activate` en Windows).
     *   Instala las dependencias de Python: `pip install .[dev,test]`
